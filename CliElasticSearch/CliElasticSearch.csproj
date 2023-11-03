@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <AssemblyName>Acme.Elasticsearch.Cli</AssemblyName>
+        <RootNamespace>Acme.Elasticsearch.Cli</RootNamespace>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>nullable</WarningsAsErrors>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-CliElasticSearch-F541D55B-CA2F-4752-A811-96135AF3D09B</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1"/>
+        <PackageReference Include="Elastic.Clients.Elasticsearch" Version="8.10.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="IndexTemplates\ComponentTemplates\" />
+      <Folder Include="Repositories\" />
+    </ItemGroup>
+</Project>
