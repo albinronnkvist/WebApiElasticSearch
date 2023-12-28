@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiElasticSearch", "WebApiElasticSearch\WebApiElasticSearch.csproj", "{500BE024-6703-4425-BC68-CDDFF87DB00E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Elasticsearch.Api", "Acme.Elasticsearch.Api\Acme.Elasticsearch.Api.csproj", "{500BE024-6703-4425-BC68-CDDFF87DB00E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliElasticSearch", "CliElasticSearch\CliElasticSearch.csproj", "{14153145-6184-4DD7-9A2F-7321DC3F729B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Elasticsearch.ETL.Initializer", "Acme.Elasticsearch.ETL.Initializer\Acme.Elasticsearch.ETL.Initializer.csproj", "{14153145-6184-4DD7-9A2F-7321DC3F729B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

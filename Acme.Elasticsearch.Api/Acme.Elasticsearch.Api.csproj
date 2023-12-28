@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+	<AssemblyName>Acme.Elasticsearch.Api</AssemblyName>
+	<RootNamespace>Acme.Elasticsearch.Api</RootNamespace>
+	<Nullable>enable</Nullable>
+	<WarningsAsErrors>nullable</WarningsAsErrors>
+	<ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>cb4b226c-25f1-49b5-8a8b-f66d4e10add7</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Elastic.Clients.Elasticsearch" Version="8.10.0" />
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+    <PackageReference Include="OneOf" Version="3.0.243" />
+    <PackageReference Include="Sieve" Version="2.5.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+</Project>
