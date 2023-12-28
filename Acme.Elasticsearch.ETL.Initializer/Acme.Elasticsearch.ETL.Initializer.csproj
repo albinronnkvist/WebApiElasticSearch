@@ -11,7 +11,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1"/>
-        <PackageReference Include="Elastic.Clients.Elasticsearch" Version="8.10.0" />
+        <PackageReference Include="Elastic.Clients.Elasticsearch" Version="8.11.0" />
     </ItemGroup>
 
     <ItemGroup>
