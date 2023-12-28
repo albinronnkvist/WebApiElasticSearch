@@ -6,6 +6,7 @@ var host = Host.CreateDefaultBuilder(args)
     {
         services.AddHostedService<ProductsInitializer>();
         services.ConfigureElasticsearch(hostContext.Configuration);
+        services.ConfigureElasticsearchServices();
     })
     .Build();
 
