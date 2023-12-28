@@ -1,4 +1,4 @@
-﻿namespace Acme.Elasticsearch.ETL.Initializer.Entities;
+﻿namespace Acme.Elasticsearch.Core.Entities;
 
 public class Product
 {

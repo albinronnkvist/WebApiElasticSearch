@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Elasticsearch.Api", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Elasticsearch.ETL.Initializer", "Acme.Elasticsearch.ETL.Initializer\Acme.Elasticsearch.ETL.Initializer.csproj", "{14153145-6184-4DD7-9A2F-7321DC3F729B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Elasticsearch.Core", "Acme.Elasticsearch.Core\Acme.Elasticsearch.Core.csproj", "{83CB1C2A-A967-4509-B30E-55D1C9826E07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{14153145-6184-4DD7-9A2F-7321DC3F729B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14153145-6184-4DD7-9A2F-7321DC3F729B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14153145-6184-4DD7-9A2F-7321DC3F729B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83CB1C2A-A967-4509-B30E-55D1C9826E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83CB1C2A-A967-4509-B30E-55D1C9826E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83CB1C2A-A967-4509-B30E-55D1C9826E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83CB1C2A-A967-4509-B30E-55D1C9826E07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

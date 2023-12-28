@@ -1,4 +1,4 @@
-﻿namespace Acme.Elasticsearch.ETL.Initializer.Options;
+﻿namespace Acme.Elasticsearch.Core.Options;
 
 public record ElasticsearchOptions
 {

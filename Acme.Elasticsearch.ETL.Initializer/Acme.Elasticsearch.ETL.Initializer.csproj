@@ -18,4 +18,8 @@
       <Folder Include="IndexTemplates\ComponentTemplates\" />
       <Folder Include="Repositories\" />
     </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Acme.Elasticsearch.Core\Acme.Elasticsearch.Core.csproj" />
+    </ItemGroup>
 </Project>

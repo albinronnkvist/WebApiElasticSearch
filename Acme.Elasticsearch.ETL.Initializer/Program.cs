@@ -1,10 +1,10 @@
 using Acme.Elasticsearch.ETL.Initializer;
-using Acme.Elasticsearch.ETL.Initializer.Workers;
+using Acme.Elasticsearch.ETL.Initializer.Initializers;
 
-IHost host = Host.CreateDefaultBuilder(args)
+var host = Host.CreateDefaultBuilder(args)
     .ConfigureServices((hostContext, services) =>
     {
-        services.AddHostedService<IndexProductsWorker>();
+        services.AddHostedService<ProductsInitializer>();
         services.ConfigureElasticsearch(hostContext.Configuration);
     })
     .Build();

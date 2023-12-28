@@ -1,10 +1,10 @@
-namespace Acme.Elasticsearch.ETL.Initializer.Workers;
+namespace Acme.Elasticsearch.ETL.Initializer.Initializers;
 
-public class IndexProductsWorker : BackgroundService
+public class ProductsInitializer : BackgroundService
 {
-    private readonly ILogger<IndexProductsWorker> _logger;
+    private readonly ILogger<ProductsInitializer> _logger;
 
-    public IndexProductsWorker(ILogger<IndexProductsWorker> logger)
+    public ProductsInitializer(ILogger<ProductsInitializer> logger)
     {
         _logger = logger;
     }

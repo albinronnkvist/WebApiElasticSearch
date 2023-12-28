@@ -1,4 +1,4 @@
-﻿using Acme.Elasticsearch.ETL.Initializer.Options;
+﻿using Acme.Elasticsearch.Core.Options;
 using Elastic.Clients.Elasticsearch;
 using Elastic.Transport;
 
@@ -8,19 +8,13 @@ public static class ServiceCollectionExtensions
 {
     public static void ConfigureElasticsearch(this IServiceCollection services, IConfiguration configuration)
     {
-        services.Configure<ElasticsearchOptions>(
-            configuration.GetSection(nameof(ElasticsearchOptions)));
-
         var elasticsearchOptions = configuration.GetSection(nameof(ElasticsearchOptions))
-            .Get<ElasticsearchOptions>();
-        ArgumentNullException.ThrowIfNull(elasticsearchOptions);
+            .Get<ElasticsearchOptions>() ?? throw new ArgumentNullException(nameof(ElasticsearchOptions), "Elasticsearch options are not configured properly");
 
         var elasticSearchSettings = new ElasticsearchClientSettings(new Uri(elasticsearchOptions.Url))
             .CertificateFingerprint(elasticsearchOptions.FingerPrint)
             .Authentication(new BasicAuthentication(elasticsearchOptions.Username, elasticsearchOptions.Password));
 
-        var elasticSearchClient = new ElasticsearchClient(elasticSearchSettings);
-
-        services.AddSingleton(elasticSearchClient);
+        services.AddSingleton(new ElasticsearchClient(elasticSearchSettings));
     }
 }
