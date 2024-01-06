@@ -5,9 +5,10 @@ var host = Host.CreateDefaultBuilder(args)
     .ConfigureServices((hostContext, services) =>
     {
         services.AddHostedService<ProductsInitializer>();
+        services.ConfigureOptionsPattern(hostContext.Configuration);
+        services.ConfigureDatabase();
         services.ConfigureElasticsearch(hostContext.Configuration);
         services.ConfigureElasticsearchServices();
-        services.ConfigureOptionsPattern(hostContext.Configuration);
     })
     .Build();
 
