@@ -23,4 +23,9 @@ public static class ServiceCollectionExtensions
     {
         services.AddTransient<IIndexTemplateService, IndexTemplateService>();
     }
+
+    public static void ConfigureOptionsPattern(this IServiceCollection services, IConfiguration configuration)
+    {
+        services.Configure<ExtractProductsOptions>(configuration.GetSection(nameof(ExtractProductsOptions)));
+    }
 }
