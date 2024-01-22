@@ -18,6 +18,7 @@
 
     <ItemGroup>
       <Folder Include="IndexTemplates\ComponentTemplates\" />
+      <Folder Include="Repositories\Interfaces\" />
     </ItemGroup>
 
     <ItemGroup>
