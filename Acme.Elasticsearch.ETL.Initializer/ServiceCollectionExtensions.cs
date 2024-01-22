@@ -1,6 +1,8 @@
-﻿using Acme.Elasticsearch.Core.Options;
+﻿using Acme.Elasticsearch.Core.Entities;
+using Acme.Elasticsearch.Core.Options;
 using Acme.Elasticsearch.ETL.Initializer.IndexTemplates;
 using Acme.Elasticsearch.ETL.Initializer.Repositories;
+using Acme.Elasticsearch.ETL.Initializer.Repositories.Interfaces;
 using Elastic.Clients.Elasticsearch;
 using Elastic.Transport;
 
@@ -34,5 +36,15 @@ public static class ServiceCollectionExtensions
     public static void ConfigureElasticsearchServices(this IServiceCollection services)
     {
         services.AddTransient<IIndexTemplateService, IndexTemplateService>();
+    }
+    
+    public static void ConfigureInitializers(this IServiceCollection services)
+    {
+        services.ConfigureProductInitializer();
+    }
+    
+    private static void ConfigureProductInitializer(this IServiceCollection services)
+    {
+        services.AddTransient<IExtractRepository<Product, int>, ExtractProductsRepository>();
     }
 }

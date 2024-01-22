@@ -18,7 +18,7 @@
 
     <ItemGroup>
       <Folder Include="IndexTemplates\ComponentTemplates\" />
-      <Folder Include="Repositories\Interfaces\" />
+      <Folder Include="Services\Interfaces\" />
     </ItemGroup>
 
     <ItemGroup>

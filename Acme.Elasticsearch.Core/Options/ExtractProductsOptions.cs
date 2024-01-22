@@ -3,5 +3,6 @@
 public record ExtractProductsOptions
 {
     public required int StartFromId { get; init; }
+    public required int BatchSize { get; init; }
     public required string DatabaseConnectionString { get; init; }
 }
